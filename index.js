@@ -17,7 +17,7 @@ function handleItemCheck() {
 //Function for Removing Items from List//
 
 function handleRemoveItem() {
-    $('.shopping-item-delete').click(function() {
+    $('.shopping-list').on('click', '.shopping-item-delete',function() {
         $(this).closest('li').remove();
     });
 };
