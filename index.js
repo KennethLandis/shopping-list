@@ -3,10 +3,11 @@
 2. check and uncheck items on the list by clicking the "Check" button
 3.permanently remove items from the list */
 
+
 //Function for checking items on list//
 
 function handleItemCheck() {
-    $('.shopping-item-toggle').click(function() {
+    $('.shopping-list').on('click', '.shopping-item-toggle',function() {
         $(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
         //console.log('check')
     });
@@ -43,8 +44,6 @@ function handleNewItems() {
         </div>
       </li>`
         );
-        $(handleItemCheck);
-        $(handleRemoveItem);
     });
 };
 
